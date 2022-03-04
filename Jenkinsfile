@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Run Tests") {
             steps{
-                sh "docker-compose up search-module-chrome search-module-firefox book-flight-module-chrome book-flight-module-firefox --no-color"
+                sh "docker-compose up search-module-chrome search-module-firefox book-flight-module-chrome book-flight-module-firefox"
             }
         }
         // stage("Stop Grid") {
