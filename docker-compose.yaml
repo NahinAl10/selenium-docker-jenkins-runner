@@ -19,7 +19,7 @@ services:
     environment:
       - HUB_HOST=hub
   search-module-chrome:
-    image: vinsdocker/selenium-docker
+    image: nal10/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -30,7 +30,7 @@ services:
     volumes:
       - ./output/search-chrome-result:/usr/share/udemy/test-output
   search-module-firefox:
-    image: vinsdocker/selenium-docker
+    image: nal10/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -41,7 +41,7 @@ services:
     volumes:
       - ./output/search-firefox-result:/usr/share/udemy/test-output
   book-flight-module-chrome:
-    image: vinsdocker/selenium-docker
+    image: nal10/selenium-docker
     depends_on:
       - chrome
       - firefox
@@ -52,7 +52,7 @@ services:
     volumes:
       - ./output/book-flight-chrome-result:/usr/share/udemy/test-output
   book-flight-module-firefox:
-    image: vinsdocker/selenium-docker
+    image: nal10/selenium-docker
     depends_on:
       - chrome
       - firefox
